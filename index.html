@@ -71,7 +71,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px;opaci
     <p class="bio">Alien art, fresh merch, good vibes 👽💚</p>
   </header>
   <main id="links">
-    <noscript><a class="btn main" href="https://www.redbubble.com/people/CosmicBlazeCo/shop">Shop Cosmic Blaze Co. on Redbubble</a></noscript>
+    <noscript><a class="btn main" href="https://cosmicblazeco.myspreadshop.com">Shop Cosmic Blaze Co.</a></noscript>
   </main>
   <button class="btn share" id="share" type="button"></button>
   <footer>© Cosmic Blaze Co.</footer>
@@ -84,9 +84,10 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px;opaci
    Leave it empty "" and that button stays hidden.
    ========================================================= */
 const LINKS = {
-  redbubble:    "https://www.redbubble.com/people/CosmicBlazeCo/shop", // Shop
+  spreadshop:   "https://cosmicblazeco.myspreadshop.com", // Shop
+  teepublic:    "https://www.teepublic.com/user/cosmicblazeco", // TeePublic shop
   abstractArt:  "",   // Abstract Art Co. page (not ready yet)
-  artRedbubble: "https://www.redbubble.com/people/CosmicBlazeCo/shop", // Art on Redbubble (for now)
+  artRedbubble: "", // Redbubble (suspended)
   podcast:      "",   // YouTube: https://www.youtube.com/@cosmicblazesessions
   jokersWins:   "https://mrjsfinancialai-arch.github.io/zynwin/", // Earn
   facebook:     "",
@@ -115,10 +116,11 @@ const svg = (d) => '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="'+d+'"/
 /* Sections and buttons. "key" matches a line in LINKS above. */
 const SECTIONS = [
   {title:"Shop", icon:svg(I.bag), items:[
-    {key:"redbubble", label:"Cosmic Blaze Co. on Redbubble", icon:svg(P.redbubble), main:true}]},
+    {key:"spreadshop", label:"Cosmic Blaze Co. Shop", icon:svg(I.bag), main:true},
+    {key:"teepublic", label:"Cosmic Blaze Co. on TeePublic", icon:svg(I.bag)}]},
   {title:"Art", icon:'<img src="img/abstract-art-co.webp" alt="" width="30" height="30">', items:[
     {key:"abstractArt", label:"Abstract Art Co.", icon:'<img src="img/abstract-art-co.webp" alt="" width="30" height="30">'},
-    {key:"artRedbubble", label:"See my art on Redbubble", icon:svg(I.palette)}]},
+    {key:"artRedbubble", label:"See my art", icon:svg(I.palette)}]},
   {title:"Podcast", icon:'<img src="img/podcast.webp" alt="" width="30" height="30">', items:[
     {key:"podcast", label:"Cosmic Blaze Sessions", icon:svg(P.youtube)}]},
   {title:"Earn", icon:svg(I.coin), items:[
