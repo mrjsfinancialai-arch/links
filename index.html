@@ -86,6 +86,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:24px;opaci
 const LINKS = {
   spreadshop:   "https://cosmicblazeco.myspreadshop.com", // Shop
   teepublic:    "https://www.teepublic.com/user/cosmicblazeco", // TeePublic shop
+  amazon:       "https://www.amazon.com/shop/influencer-1ab43300", // Amazon Storefront
   abstractArt:  "",   // Abstract Art Co. page (not ready yet)
   artRedbubble: "", // Redbubble (suspended)
   podcast:      "",   // YouTube: https://www.youtube.com/@cosmicblazesessions
@@ -117,7 +118,8 @@ const svg = (d) => '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="'+d+'"/
 const SECTIONS = [
   {title:"Shop", icon:svg(I.bag), items:[
     {key:"spreadshop", label:"Cosmic Blaze Co. Shop", icon:svg(I.bag), main:true},
-    {key:"teepublic", label:"Cosmic Blaze Co. on TeePublic", icon:svg(I.bag)}]},
+    {key:"teepublic", label:"Cosmic Blaze Co. on TeePublic", icon:svg(I.bag)},
+   {key:"amazon", label:"Amazon Storefront", icon:svg(I.bag)}]},
   {title:"Art", icon:'<img src="img/abstract-art-co.webp" alt="" width="30" height="30">', items:[
     {key:"abstractArt", label:"Abstract Art Co.", icon:'<img src="img/abstract-art-co.webp" alt="" width="30" height="30">'},
     {key:"artRedbubble", label:"See my art", icon:svg(I.palette)}]},
